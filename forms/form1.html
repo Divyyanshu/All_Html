@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jai shree ram</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@600&family=Poppins:ital,wght@1,500&display=swap");
+      * {
+        font-family: "Dancing Script", cursive;
+        font-family: "Nunito", sans-serif;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        text-decoration: none;
+      }
+      div{
+        padding: 5px;
+      }
+      form {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Resgistration form</h1>
+    <hr />
+    <form>
+      <div>
+        <label for="username">Username :</label>
+        <input type="text" id="username" placeholder="here" />
+      </div>
+      <div>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
+        <label for="password">Password :</label>
+        <input type="password" id="password" required />
+      </div>
+      <div>
+        <label for="number">Number :</label>
+        <input
+          type="number"
+          id="number"
+          maxlength="10"
+          min="1"
+          placeholder="no."
+        />
+      </div>
+      <div>
+        <label for="gender">Gender :</label>
+        <input type="radio" id="gender" name="gender" /> male
+        <input type="radio" name="gender" id="gender" /> female
+      </div>
+      <div>
+        <label for="checkbox">Game :</label>
+        <input type="checkbox" name="intrest" id="checkbox" />Football
+        <input type="checkbox" name="intrest" id="checkbox" />Cricket
+      </div>
+      <div>
+        <label for="country">Fav-Country :</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="japan">Japan</option>
+            <option value="america">America</option>
+            <option value="pakistan">pakistan</option>
+        </select>
+      </div>
+      <div>
+        <label for="textarea">Message : </label>
+        <textarea name="Message" id="textarea" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="file">File Upload here :</label>
+        <input type="file"  id="file">
+      </div>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
