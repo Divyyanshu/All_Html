@@ -19,19 +19,23 @@
       form {
         padding: 20px;
       }
+      .sameclas{
+        background-color: aqua;
+      }
     </style>
   </head>
   <body>
     <h1>Resgistration form</h1>
     <hr />
     <form>
+      <!-- using class and id in username or email -->
       <div>
         <label for="username">Username :</label>
-        <input type="text" id="username" placeholder="here" />
+        <input type="text" id="username" placeholder="here" class="sameclas" />
       </div>
       <div>
         <label for="email">E-mail :</label>
-        <input type="email" id="email" required />
+        <input type="email" id="email" required  class="sameclas"/>
       </div>
       <div>
         <label for="password">Password :</label>
